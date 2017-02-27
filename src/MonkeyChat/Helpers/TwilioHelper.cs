@@ -15,7 +15,7 @@ namespace MonkeyChat
         {
             var id = CrossDeviceInfo.Current.Id;
 
-            var tokenEndpoint = $"https://xamarinchat.azurewebsites.net/token?device={id}";
+            var tokenEndpoint = $"http://c01fda9b.ngrok.io/token?device={id}";
 
             var http = new HttpClient();
             var data = await http.GetStringAsync(tokenEndpoint);
